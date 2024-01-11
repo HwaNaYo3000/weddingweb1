@@ -36,11 +36,11 @@ body{
     display: table;
     clear:both;
 }
-.container>div{
+.hero .container>div{
     border: 1px solid #fff;
     margin-top:30px
 }
-.container>.hero-left{
+.hero .container>.hero-left{
     float: left;
     width: 40%;
     height: 125px;
@@ -58,7 +58,7 @@ body{
     font-size: 12px;
     letter-spacing: 1px;
 }
-.container>.hero-logo{
+.hero .container>.hero-logo{
     float: left;
     width: 20%;
     height: 125px;
@@ -66,7 +66,7 @@ body{
     text-align: center;
     color: #fff;
 }
-.container>.hero-right{
+.hero .container>.hero-right{
     float: left;
     width: 40%;
     height: 125px;
@@ -185,4 +185,146 @@ h2.subtitle{
     background: rgb(109,172,124);
 }
 
-/* 237 242 239 */
+/* section whoami */
+section.whoami{
+    background-color: rgb(237,242,239);
+    padding-top: 50px;
+}
+.leftbox{
+    width: 60%;
+    float: left;
+    position: relative;
+}
+.leftbox img{
+    position: absolute;
+}
+img.aboutme{
+    top: 25px;
+}
+img.aboutme2{
+    top: 280px;
+    right: 60px;
+    border: 15px solid rgb(237,242,239);
+    z-index: 2;
+}
+.rightbox{
+    width: 40%;
+    float: right;
+}
+.rightbox h1{
+    font-size: 36px;
+    line-height: 1.5;
+}
+.rightbox p{
+    line-height: 1.5;
+}
+.whoami .btn{
+    margin-left: 0;
+}
+
+/* packages */
+/* 반응형 정사각형 만드는 공식 */
+
+.package-box{
+    width: 100%;
+    position: relative;
+}
+.package-box::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.inner img{
+    width: 100%;
+    height: auto;
+}
+.px16{
+    font-size: 16px;
+}
+.px25{
+    font-size: 25px;
+}
+.btn.btn1{
+    width: 450px;
+    font-weight: 3;
+    margin-top: 0px;
+}
+
+/* container2 */
+
+.main2{
+    width: 100%;
+    height: 450px;
+    background: url(../main/wedding03.jpg) no-repeat center;
+    background-size: cover;
+}
+.container2{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero2-logo h1{
+    margin: 0;
+    text-align: center;
+    padding-top: 350px;
+    font-family: 'Unna', serif;
+    font-size: 36px;
+    color: #fff;
+}
+
+/* whoami2 */
+
+section.whoami2{
+    margin-top: 60px;
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.leftbox2{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.pack{
+    width: 600px;
+    height: 340px;
+    margin-top: 160px;
+    background-color: rgb(237,242,239);
+}
+.rightbox2{
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.rightbox2 p{
+    font-size: 17px;
+    padding-top: 50px;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+.rightbox2 .right{
+    padding-top: 0;
+    float: right;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.dmark{
+    position: absolute;
+    left: 40%;
+    right: 60%;
+    margin-top: 130px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+.btn.btn2{
+    width: 230px;
+    font-weight: 4;
+}
